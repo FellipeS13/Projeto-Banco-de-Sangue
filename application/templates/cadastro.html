@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+  {% block body %}
+      <div class="d-flex justify-content-center align-items-center">
+        <form method="POST" class="bbb">
+          {{ form.csrf_token }}
+          <div>
+            <h2 class="cadastro-h">CADASTRO</h2>
+            <p>Ao se cadastrar, você entrará na lista de possivéis doadores disponivéis e assim ajudar a salvar uma vida</p>
+            <p>Caso seja uma instituição onde deseja ver a lista dos doadores cadastrados clicar abaixo</p>
+            <a href="{{ url_for('cadastro_SUS') }}" class="cadastro">Cadastre-se</a>
+
+          </div>
+          <div>
+            {{ form.nome.label(class="form-label") }}
+            {{ form.nome(class="form-control") }}
+          </div>
+          <div>
+            {{ form.email.label(class="form-label") }}
+            {{ form.email(class="form-control") }}
+          </div>
+          <div>
+            {{ form.senha.label(class="form-label") }}
+            {{ form.senha(class="form-control") }}
+          </div>
+          <div>
+            {{ form.confirmacao.label(class="form-label") }}
+            {{ form.confirmacao(class="form-control") }}
+          </div>
+          <div>
+            {{ form.telefone.label(class="form-label") }}
+            {{ form.telefone(class="form-control") }}
+          </div>
+          <div>
+            {{ form.tipoSanguineo.label(class="form-label") }}
+            {{ form.tipoSanguineo(class="form-control") }}
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-outline-danger" value="Submit">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+  {% endblock %}

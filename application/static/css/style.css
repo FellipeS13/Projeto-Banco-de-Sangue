@@ -1,0 +1,126 @@
+body{
+  background: rgb(195,34,34);
+  background-color: linear-gradient(0deg, rgba(195,34,34,1) 0%, rgba(156,4,4,1) 100%);
+
+}
+
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+}
+.aaa{
+  background-color: antiquewhite;
+  padding: 90px;
+  border-radius: 30px;
+  width: 35rem;
+  
+}
+.bbb{
+  background-color: antiquewhite;
+  padding: 90px;
+  border-radius: 30px;
+  width: 35rem;
+  margin-top: 2rem;
+  
+}
+.ccc{
+  background-color: antiquewhite;
+  padding: 90px;
+  border-radius: 30px;
+  width: 80rem;
+  height: 50rem;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 2rem;
+}
+label{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif; 
+  font-size: 30px;
+  font-weight: bold;
+  color: brown;
+  padding: 10px;
+  
+}
+form{
+  width: 400px;
+  padding: 5px;
+}
+.form-control{
+  height: 50px;
+}
+.navbar{
+  height: 70px;
+  background-color: rgb(251, 251, 251);
+}
+.navbar-brand{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif; 
+  font-size: 30px;
+  font-weight: bold;
+  color: brown;
+  margin-left: 20px;
+}
+.nav-link{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif; 
+  font-size: 25px;
+  font-weight: bold;
+  color: brown;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.cadastro{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: bold;
+  color: brown;
+  margin-left: 5px;
+}
+.form-check-label{
+  font-size: 25px;
+  row-gap: 10px;
+}
+
+.cadastro-h{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: bold;
+  color: brown;
+  margin-left: 6.5rem;
+  margin-bottom: 3rem;
+}
+
+.list-group{
+  width: 1920px;
+  height: 80px;
+}
+.list-group-item{
+  width: 23rem;
+  height: 5rem;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bold;
+  color: brown;
+}
+.dados-doadores{
+  margin-top: 7px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: brown;
+}
+.titleDoadores{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bold;
+  color: brown;
+}
+
+.btn{
+    margin-top: 10px;
+}

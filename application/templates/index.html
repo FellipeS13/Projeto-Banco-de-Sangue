@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+  {% block body %}
+      <div class="login ">
+        <form method="POST" class="aaa">
+          {{ form.csrf_token }}
+          <fieldset>
+            <div>
+
+              {{ form.usuario.label(class="form-label") }}
+              {{ form.usuario(class="form-control") }}
+            </div>
+            <div>
+              {{ form.senha.label(class="form-label") }}
+              {{ form.senha(class="form-control") }}
+              <a href="{{ url_for('cadastro_usuario') }}" class="cadastro">Cadastre-se</a>
+            </div>
+          </fieldset>
+          <div class="col-sm" style="text-align: right;">
+            {{ form.submit_entrar(class="btn btn-outline-danger") }}
+          </div>
+        </form>
+      </div>
+
+{% endblock %}
+
+

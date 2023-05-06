@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+  {% block body %}
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="ccc">
+          <h2 class="titleDoadores">Doadores</h2>
+          {% for user in lista_usuarios %}
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item">Nome <p class="dados-doadores">{{ user.nome }}</p></li>
+              <li class="list-group-item">Tipo Sanguineo <p class="dados-doadores">{{ user.tiposanguineo }}</p> </li>
+              <li class="list-group-item">Telefone <p class="dados-doadores">{{ user.telefone }}</p></li>
+            </ul>
+          {% endfor %}
+        </div>
+      </div>
+  {% endblock %}

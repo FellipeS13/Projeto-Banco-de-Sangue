@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+  {% block body %}
+      <div class="d-flex justify-content-center align-items-center">
+        <form method="POST" class="bbb">
+          {{ form1.csrf_token }}
+          <div>
+            <h2 class="cadastro-h">CADASTRO</h2>
+            <p>Ao se cadastrar, você instituição poderá ver uma lista de possiveis doadores para auxiliar a salvar uma vida</p>
+          </div>
+          <div>
+            {{ form1.nome.label(class="form-label") }}
+            {{ form1.nome(class="form-control") }}
+          </div>
+          <div>
+            {{ form1.cnpj.label(class="form-label") }}
+            {{ form1.cnpj(class="form-control") }}
+          </div>
+          <div>
+            {{ form1.senha.label(class="form-label") }}
+            {{ form1.senha(class="form-control") }}
+          </div>
+          <div>
+            {{ form1.confirmacao.label(class="form-label") }}
+            {{ form1.confirmacao(class="form-control") }}
+          </div>
+          <div>
+            <button type="submit" class="btn btn-outline-danger" value="Submit">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+  {% endblock %}
